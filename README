@@ -1,0 +1,27 @@
+執行環境：
+# JAVA
+  java version "1.8.0_311"
+  Java(TM) SE Runtime Environment (build 1.8.0_311-b11)
+  Java HotSpot(TM) 64-Bit Server VM (build 25.311-b11, mixed mode)
+# OS
+  Darwin MacBook-Pro-997.local 21.5.0 Darwin Kernel Version 21.5.0: Tue Apr 26 21:08:22 PDT 2022; root:xnu-8020.121.3~4/RELEASE_X86_64 x86_64
+# ANTLR
+  antlr-3.5.3-complete.jar
+# clang version
+  Apple clang version 13.1.6 (clang-1316.0.21.2.5)
+  Target: x86_64-apple-darwin21.5.0
+  Thread model: posix
+  InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+執行方式：
+  make會自動編譯並執行
+  make clean會自動清理檔案
+
+檔案說明
+  Makefile: 編譯執行和清理檔案用
+  myCompiler.g: 定義subset of g
+  myCompiler_test.java: 執行 myCompiler 用的檔案
+  antlr-3.5.3-complete.jar: 跑anltr需要的jar
+  Testfile:包含測試用C-code的資料夾,包含sample1~3.c
+  result:包含llvm ir之資料夾
+  result_run:包含執行檔之資料夾
+ 
